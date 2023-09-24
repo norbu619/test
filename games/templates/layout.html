@@ -24,10 +24,12 @@
 
     <div><a class="btn-nav" href="{{ url_for('games_bp.browse_games') }}">All Games</a></div>
 
-    <div> Browse by Genres</div>
+    <div> Browse by Genres
     {% for genre in gzz %}
         <a class="btn-nav2" href="{{ url_for('games_bp.browse_games_by_genre', genre=genre) }}">{{ genre }}</a>
+    </div>
     {% endfor %}
+
 </div>
 
 
